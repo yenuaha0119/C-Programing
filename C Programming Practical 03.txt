@@ -1,0 +1,206 @@
+C Programming 
+CS 102.3
+Practical 03
+Group A 
+30351
+
+1.
+#include<stdio.h>
+int main()
+{
+   int a,b;
+   printf("Enter a number ");
+   scanf("%d",&a);
+   printf("Enter another number ");
+   scanf("%d",&b);
+   if(a>b)
+      printf("%d is the highest number \n",a);
+   else
+      printf("%d is the highest number \n",b);
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2.
+#include<stdio.h>
+int main()
+{
+   int a,b,c,largest,smallest;
+   printf("Enter three number ");
+   scanf("%d %d %d",&a,&b,&c);
+   largest=a;
+   smallest=a;
+   if(b>largest)
+      largest=b;
+   if(c>largest)
+      largest=c;
+ 
+   if(b<smallest)
+       smallest=b;
+   if(c<smallest)
+       smallest=c;
+ 
+   printf("The largest number is %d",largest);
+   printf("The smallest number is %d",smallest);
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+3.
+#include<stdio.h>
+int main()
+{
+   char name[30];
+   float bsalary,newsalary,increment;
+ 
+   printf("Enter employee name ");
+   scanf("%s",&name);
+   printf("Enter basic salary ");
+   scanf("%f",&bsalary);
+ 
+   if (bsalary<5000)
+       increment=0.05*bsalary;
+   else if (bsalary>=5000 && bsalary<10000)
+       increment=0.10*bsalary;
+   else
+       increment=0.15*bsalary;
+ 
+   newsalary=bsalary+increment;
+ 
+   printf("Employee name is %s \n",name);
+   printf("Your salary is %f ",newsalary);
+ 
+ 
+}
+ 
+ 
+4.
+#include<stdio.h>
+#include<math.h>
+#define PI 483.14159
+int main()
+{
+   float r,d,c,a;
+   printf("Enter the radius of the circle ");
+   scanf("%f",&r);
+ 
+   d=2*r;
+   c=2*PI*r;
+   a=PI*r*r;
+ 
+   printf("The diameter of the circle is %.2f\n",d);
+   printf("The circumference of the circle is %.2f\n",c);
+   printf("The area of the circle is %.2f\n",a);
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5.
+#include<stdio.h>
+int main()
+{
+   int n1,n2;
+   printf("Enter first number ");
+   scanf("%d",&n1);
+   printf("Enter second number ");
+   scanf("%d",&n2);
+ 
+   if (n1%n2==0)
+       printf("%d is a multiplier of %d",n1,n2);
+   else
+       printf("%d is not a multiplier of %d",n1,n2);
+ 
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6.
+#include <stdio.h>
+int main()
+{
+   printf("Integer equivalents of uppercase letters:\n");
+   printf("A: %d\n", 'A');
+   printf("B: %d\n", 'B');
+   printf("C: %d\n", 'C');
+ 
+   printf("Integer equivalents of lowercase letters:\n");
+   printf("a: %d\n", 'a');
+   printf("b: %d\n", 'b');
+   printf("c: %d\n", 'c');
+ 
+   printf("Integer equivalents of numbers:\n");
+   printf("0: %d\n", '0');
+   printf("1: %d\n", '1');
+   printf("2: %d\n", '2');
+ 
+   printf("Integer equivalents of symbols:\n");
+   printf("$: %d\n", '$');
+   printf("*: %d\n", '*');
+   printf("+: %d\n", '+');
+   printf("/: %d\n", '/');
+   printf("Blank character: %d\n", ' ');
+ 
+   return 0;
+}
+7.
+#include<stdio.h>
+int main()
+{
+ int year;
+ char city;
+ float bsalary,msales,yallowance,callowance,bonus,grossremuneration;
+ 
+ printf("Enter the salesman's service years ");
+ scanf("%d",&year);
+ printf("Enter the salesman's city ");
+ scanf("%s",&city);
+ printf("Enter the salesman's basic salary ");
+ scanf("%f",&bsalary);
+ printf("Enter the salesman's monthly sales ");
+ scanf("%f",&msales);
+ 
+ if (year>5)
+       yallowance=bsalary*0.10;
+ 
+ if (city=='c')
+       callowance=2500;
+ 
+ if (msales<25000)
+       bonus=msales*0.1;
+ else if (msales>25000 && msales<50000)
+       bonus=msales*0.12;
+ else
+       bonus=msales*0.15;
+ 
+ grossremuneration=bsalary+yallowance+callowance+bonus;
+ printf("Gross monthly remuneration is %.2f",grossremuneration);
+}
+                                                                               
